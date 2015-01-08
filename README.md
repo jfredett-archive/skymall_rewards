@@ -50,10 +50,10 @@ The initial version, "Skymall Rewards (Manager)" will offer the following featur
 * Supports manual allocation/editing of EP and GP, en masses, via a
   slash-command (which makes award macros easy to make). e.g.,
 
-    /skymall_rewards award 100 <EP|GP> all
-    /skymall_rewards award 10 EP Somespecificperson
-    /skymall_rewards decay 10% <EP|GP|BOTH>
-    /skymall_rewards reset <ALL|Somespecificperson>
+      /skymall_rewards award 100 <EP|GP> all
+      /skymall_rewards award 10 EP Somespecificperson
+      /skymall_rewards decay 10% <EP|GP|BOTH>
+      /skymall_rewards reset <ALL|Somespecificperson>
 
   and similar. Much of the interface will be available via slash-commands, with
   UI to be added later, and sparingly.
@@ -61,8 +61,8 @@ The initial version, "Skymall Rewards (Manager)" will offer the following featur
 * EPGP raiders are added manually to the list, and removed manually from it.
   e.g.,
 
-    /skymall_rewards add_raider <name>
-    /skymall_rewards add_raider ALL
+      /skymall_rewards add_raider <name>
+      /skymall_rewards add_raider ALL
 
   The latter will ensure that all current members of the raid are in the EPGP
   system with default values.
@@ -72,15 +72,15 @@ The initial version, "Skymall Rewards (Manager)" will offer the following featur
 * It will support custom base EP, GP values.
 
 * It will support a simple system for organizing loot assignment, in
-   particular, those wanting an item will simply type:
+  particular, those wanting an item will simply type:
 
-    <MS|OS|GR> [link to item]
+      <MS|OS|GR> [link to item]
 
-In raid, the addon will automatically register that person's intent on that item
-and -- in the case of multiple people requisitioning that item -- will show, in
-a convenient frame, only the person with highest priority. It follows the usual
-system with MS always winning over OS always winning over GR (greed) rolls
-regardless of priority, and priority determining within a particular roll class.
+  In raid, the addon will automatically register that person's intent on that item
+  and -- in the case of multiple people requisitioning that item -- will show, in
+  a convenient frame, only the person with highest priority. It follows the usual
+  system with MS always winning over OS always winning over GR (greed) rolls
+  regardless of priority, and priority determining within a particular roll class.
 
 * In the aforementioned frame, it will have a 'Give Item and Assign GP' button
   (probably with a less clumsy name), which will do what it says on the tin.
