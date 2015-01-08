@@ -4,6 +4,6 @@
 ## Author: Joe Fredette
 ## Version: 0.0.1
 
-embeds.xml
+libs\Ace3\AceAddon-3.0.xml
 
 Core.lua
