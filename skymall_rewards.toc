@@ -1,5 +1,5 @@
 ## Interface: 40000
-## Title: Skymall Rewards, an EPGP system
+## Title: Skymall Rewards
 ## Notes: An EPGP tracker which stores EPGP locally (rather than in officer notes)
 ## Author: Joe Fredette
 ## Version: 0.0.1
