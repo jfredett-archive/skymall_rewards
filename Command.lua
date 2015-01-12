@@ -79,26 +79,32 @@ function Command:remove()
     return
   end
 
-  Player.find(target):delete()
+  Player.find(target):remove()
 end
 
 function Command:help()
   AceConsole:Print("USAGE")
   AceConsole:Print("")
   AceConsole:Print("award <EP|GP> <amount> <target player|RAID|ALL>")
-  AceConsole:Print(" - Awards a player EP or GP in the given amount, to the given")
-  AceConsole:Print("   player (or all players in the raid, or all players on the list).")
+  AceConsole:Print(" - Awards a player EP or GP in the given amount, to the given" ..
+                   "player (or all players in the raid, or all players on the list).")
+  AceConsole:Print("")
   AceConsole:Print("decay <percentage> <EP|GP|BOTH> <target player|ALL>")
-  AceConsole:Print(" - Decays the EP, GP, or Both EP and GP; of the given player by the")
-  AceConsole:Print("   given percentage")
+  AceConsole:Print(" - Decays the EP, GP, or Both EP and GP; of the given player" ..
+                   "by the given percentage")
+  AceConsole:Print("")
   AceConsole:Print("reset <target player|ALL>")
-  AceConsole:Print(" - Reset the EP and GP values of the given player (or all players)")
-  AceConsole:Print("   to the base values")
+  AceConsole:Print(" - Reset the EP and GP values of the given player (or all " ..
+                   "players) to the base values")
+  AceConsole:Print("")
   AceConsole:Print("add <target player|RAID>")
-  AceConsole:Print(" - Add a given player (or all players in the current raid) to the list")
-  AceConsole:Print("   of tracked players.")
+  AceConsole:Print(" - Add a given player (or all players in the current raid) " ..
+                   "to the list of tracked players.")
+  AceConsole:Print("")
   AceConsole:Print("remove <target player|ALL>")
-  AceConsole:Print(" - Remove a given player (or all players) from the list of tracked players.")
+  AceConsole:Print(" - Remove a given player (or all players) from the " ..
+                   "list of tracked players.")
+  AceConsole:Print("")
   AceConsole:Print("")
 end
 
@@ -110,7 +116,6 @@ function Command:run()
 --    remove   target
 --    help
   cmd = self:arg(1)
-  AceConsole:Print("invoked with arg0 of: " .. cmd or "it was nil")
   if not cmd or string.len(cmd) == 0 then
     cmd = "help"
   end
