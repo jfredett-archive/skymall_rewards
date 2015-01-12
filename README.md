@@ -61,8 +61,8 @@ The initial version, "Skymall Rewards (Manager)" will offer the following featur
 * EPGP raiders are added manually to the list, and removed manually from it.
   e.g.,
 
-      /skymall_rewards add_raider <name>
-      /skymall_rewards add_raider ALL
+      /skymall_rewards add <name>
+      /skymall_rewards add ALL
 
   The latter will ensure that all current members of the raid are in the EPGP
   system with default values.
