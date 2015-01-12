@@ -121,16 +121,11 @@ function Command:run()
   end
 
   invocation = Command[cmd]
-  if invocation then
-    AceConsole:Print("Invocation was found in the table")
-  end
-
   if not invocation then
-    AceConsole:Print("Invalid invocation recieved: " .. self.input)
-    return
+    return Command:help()
+  else
+    return invocation(self)
   end
-
-  return invocation(self)
 end
 
 function SkymallRewards:Main(input)
